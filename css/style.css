@@ -1,0 +1,83 @@
+/* JEWELLA - styles */
+:root{
+    --accent:#b57b9f;
+    --accent-dark:#9a5f86;
+    --bg:#fff;
+    --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family: 'Cairo', sans-serif;
+    background:var(--bg);
+    color:var(--muted);
+    direction:rtl;
+    -webkit-font-smoothing:antialiased;
+}
+.container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/* header / hero */
+.hero{
+    background:linear-gradient(180deg, #fffafc 0%, #f7eef6 100%);
+    padding:30px 0 60px;
+}
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.logo{
+    font-weight:700;
+    color:var(--accent);
+    font-size:22px;
+}
+.menu{list-style:none;padding:0;margin:0;display:flex;gap:15px;align-items:center}
+.menu a{ text-decoration:none;color:var(--muted)}
+.btn{ background:transparent;border:1px solid var(--accent);padding:8px 14px;border-radius:8px;text-decoration:none;color:var(--accent)}
+.btn-primary{ background:var(--accent);color:#fff;border:none}
+.hero-content{ text-align:center;padding:40px 0 }
+.hero-content h1{ color:var(--accent-dark);margin:0 0 10px;font-size:34px}
+.hero-content p{ margin:0 0 18px}
+
+/* products */
+.section{padding:50px 0}
+.section-title{ text-align:center;color:var(--accent);margin-bottom:25px;font-size:24px}
+.grid{ display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{ background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.06);text-align:center}
+.card img{ width:100%;height:200px;object-fit:cover;border-radius:8px}
+.card h3{ color:var(--accent);margin:12px 0 6px}
+.price{ font-weight:700;color:var(--accent-dark);margin-top:8px}
+
+/* features */
+.features-grid{ display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.feature{ background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 15px rgba(0,0,0,0.04);text-align:center}
+.feature h4{ margin:8px 0;color:var(--accent)}
+
+/* testimonials */
+.test-grid{ display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.testimonial{ background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 15px rgba(0,0,0,0.04)}
+.testimonial p{ margin:0 0 8px}
+.testimonial cite{ color:var(--accent-dark)}
+
+/* contact */
+.contact-grid{ display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+.contact-form label{ display:block;margin-bottom:10px}
+.contact-form input, .contact-form textarea{ width:100%;padding:10px;border:1px solid #eee;border-radius:8px;margin-top:6px}
+.contact-info{ background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 15px rgba(0,0,0,0.04)}
+
+/* footer */
+.footer{ background:var(--accent);color:#fff;padding:18px;text-align:center;margin-top:30px;border-radius:8px}
+
+/* responsive */
+@media(max-width:800px){
+    .test-grid{ grid-template-columns:1fr }
+    .contact-grid{ grid-template-columns:1fr }
+    .menu{display:none}
+    .hero-content h1{ font-size:28px}
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JEWELLA - صفحة الهبوط</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">JEWELLA</div>
+            <ul class="menu">
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#features">مميزاتنا</a></li>
+                <li><a href="#testimonials">آراء العملاء</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+            <a class="btn" href="#products">تسوقي الآن</a>
+        </nav>
+
+        <div class="hero-content">
+            <h1>عناية فاخرة... جمال يليق بك</h1>
+            <p>منتجات تجميل طبيعية وفاخرة لنضارة طويلة ونقاء ملموس.</p>
+            <a class="btn btn-primary" href="#products">تصفحي تشكيلتنا</a>
+        </div>
+    </div>
+</header>
+
+<section id="products" class="section products">
+    <div class="container">
+        <h2 class="section-title">منتجاتنا المميزة</h2>
+        <div class="grid">
+            <article class="card">
+                <img src="images/Serum Glow.jpg" alt="Serum Glow">
+                <h3>Serum Glow</h3>
+                <p>سيروم تفتيح وترطيب فوري يمنحك إشراقة صحية.</p>
+                <div class="price">25$</div>
+            </article>
+            <article class="card">
+                <img src="images/Luxury Cream.jpg" alt="Luxury Cream">
+                <h3>Luxury Cream</h3>
+                <p>كريم ترطيب فاخر بتركيبة مغذية ومريحة للبشرة.</p>
+                <div class="price">30$</div>
+            </article>
+            <article class="card">
+                <img src="images/Natural Oil.jpg" alt="Natural Oil">
+                <h3>Natural Oil</h3>
+                <p>زيوت طبيعية 100% لتغذية ولمعان طبيعي.</p>
+                <div class="price">18$</div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="section features">
+    <div class="container">
+        <h2 class="section-title">لماذا JEWELLA؟</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h4>مكونات طبيعية</h4>
+                <p>نختار أفضل المكونات لعناية آمنة وفعالة.</p>
+            </div>
+            <div class="feature">
+                <h4>تجربة فاخرة</h4>
+                <p>تصميم أنيق ومنتجات تعبّر عن الفخامة.</p>
+            </div>
+            <div class="feature">
+                <h4>شحن سريع</h4>
+                <p>خدمة شحن موثوقة وسريعة داخل وخارج البلاد.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="section testimonials">
+    <div class="container">
+        <h2 class="section-title">آراء العملاء</h2>
+        <div class="test-grid">
+            <blockquote class="testimonial">
+                <p>منتجات رائعة وغيرت بشرتي للأفضل! أنصح بشدة.</p>
+                <cite>— سارة</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+                <p>التغليف أنيق والخدمة سريعة. تجربة ممتازة.</p>
+                <cite>— ليلى</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="container contact-grid">
+        <div>
+            <h2 class="section-title">تواصل معنا</h2>
+            <p>للطلبات أو الاستفسار ارسلي لنا رسالة:</p>
+            <form action="php/contact.php" method="POST" class="contact-form">
+                <label>الاسم
+                    <input type="text" name="name" required>
+                </label>
+                <label>البريد الإلكتروني
+                    <input type="email" name="email" required>
+                </label>
+                <label>الرسالة
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>معلومات الاتصال</h3>
+            <p>البريد: info@jewella.example</p>
+            <p>هاتف: +970-XX-XXXXXXX</p>
+            <p>تابعينا على وسائل التواصل الاجتماعي لمزيد من العروض.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 JEWELLA - جميع الحقوق محفوظة</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
